@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Bootstrap Tutorial In Hindi</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">iCoder</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Write for us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ALERTS -->
+  <div class="alert alert-success rounded-0 mb-0">
+    A simple primary alert—check it out!
+  </div>
+
+  <div class="alert alert-success alert-dismissible fade show rounded-0">
+    <strong>Success!</strong> Your form has been filled successfully
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-light py-2">
+    <nav aria-label="breadcrumb" class="px-3">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Blog</a></li>
+        <li class="breadcrumb-item"><a href="#">Tutorials</a></li>
+        <li class="breadcrumb-item active">
+          Bootstrap In One Blog <span class="badge bg-success">New</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="px-3 mt-3">
+    <button class="btn btn-primary btn-sm">Primary</button>
+    <button class="btn btn-outline-danger">Danger</button>
+
+    <button class="btn btn-primary btn-lg">Large button</button>
+    <button class="btn btn-secondary btn-lg">Large button</button>
+
+    <button class="btn btn-primary btn-sm">Small button</button>
+    <button class="btn btn-secondary btn-sm">Small button</button>
+  </div>
+
+  <!-- GRID BUTTONS -->
+  <div class="d-grid gap-2 px-3 mt-3">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+
+  <!-- CARD -->
+  <div class="container mt-4">
+    <div class="card" style="width: 18rem;">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop" class="card-img-top"
+        alt="Technology image">
+
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=600&fit=crop"
+            class="d-block w-100" alt="Laptop">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=600&fit=crop"
+            class="d-block w-100" alt="Coding">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&h=600&fit=crop"
+            class="d-block w-100" alt="Nature">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row bg-secondary">
+      <div class="col-md-10 col-sm-6 col-6 border">
+        1 of 2
+      </div>
+      <div class="col-md-2 col-sm-6 col-6 border">
+        2 of 2
+      </div>
+    </div>
+    <div class="row bg-success">
+      <div class="col border">
+        1 of 3
+      </div>
+      <div class="col border">
+        2 of 3
+      </div>
+      <div class="col border">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

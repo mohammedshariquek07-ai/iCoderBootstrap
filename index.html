@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iCoder - Heaven for Programmers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .post-img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Dev</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">AI</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-secondary">Search</button>
+                </form>
+
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    Sign Up
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= LOGIN MODAL ================= -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Login to iCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">
+          Login
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+>
+
+    <!-- ================= SIGNUP MODAL ================= -->
+   <!-- SIGN UP MODAL -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Get an iCoder Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control">
+            <div class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Confirm Password</label>
+            <input type="password" class="form-control">
+          </div>
+
+          <!-- Create Account Button (FIXED POSITION) -->
+          <button type="submit" class="btn btn-primary">
+            Create Account
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- ================= CAROUSEL ================= -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= POSTS ================= -->
+    <div class="container my-4">
+
+        <div class="row mb-2">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 d-flex">
+                <div
+                    class="row g-0 border rounded overflow-hidden shadow-sm flex-md-row mb-4 h-100 w-100 position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Global Conferences</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="mb-auto">This is a wider card with supporting text below.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb.jpg" width="200" height="250" class="post-img img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 d-flex">
+                <div
+                    class="row g-0 border rounded overflow-hidden shadow-sm flex-md-row mb-4 h-100 w-100 position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Learn Designing</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thum2.jpg" width="200" height="250" class="post-img img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mb-2">
+
+            <!-- Card 3 -->
+            <div class="col-md-6 d-flex">
+                <div
+                    class="row g-0 border rounded overflow-hidden shadow-sm flex-md-row mb-4 h-100 w-100 position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="d-inline-block mb-2 text-secondary">World</strong>
+                        <h3 class="mb-0">Bootstrap template</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="mb-auto">This is a wider card with supporting text below.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb3.jpg" width="200" height="250" class="post-img img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 d-flex">
+                <div
+                    class="row g-0 border rounded overflow-hidden shadow-sm flex-md-row mb-4 h-100 w-100 position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="d-inline-block mb-2 text-danger">Edifice</strong>
+                        <h3 class="mb-0">An top IT Company</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb4.jpg" width="200" height="250" class="post-img img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container my-4">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2025–2026 iCoder</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>iCoder-Heaven for programmers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">iCoder</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Topics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    >
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="mb-4">Contact Us</h1>
+
+        <form>
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+
+            <!-- Single Select -->
+            <div class="mb-3">
+                <label for="selectOne" class="form-label">Select your Query</label>
+                <select class="form-select" id="selectOne">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <!-- Multiple Select -->
+            <div class="mb-3">
+                <label for="selectMultiple" class="form-label">Select type</label>
+                <select multiple class="form-select" id="selectMultiple">
+                    <option>Web</option>
+                    <option>Tech stack</option>
+                    <option>Technology</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form-group row my-2">
+                <div class="col-sm-2">
+                    Are you a Member?
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row my-2">
+                <div class="col-sm-2">
+                    Are you a Professor?
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row my-2">
+                <div class="col-sm-2">
+                    Are you a Coder?
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Textarea -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Tell us about yourself</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Elaborate your Concern</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+
+
+    <footer class="container">
+        <p class="float-end">
+            <a href="#">Back to top</a>
+        </p>
+        <p>
+            © 2025–2026 iCoder, Inc. ·
+            <a href="#">Privacy</a> ·
+            <a href="#">Terms</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
